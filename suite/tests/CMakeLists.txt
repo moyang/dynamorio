@@ -6732,3 +6732,5 @@ if (UNIX AND X86 AND CPU_AMD AND NOT DR_HOST_X64)
     code_api|tool.record_filter_bycore_multi
     code_api|tool.record_filter_bycore_uni)
 endif ()
+
+set_tests_properties(unit_tests PROPERTIES LABELS TMATE_DEBUG)#NOCHECK
